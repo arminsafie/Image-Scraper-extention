@@ -1,0 +1,25 @@
+
+{
+  "manifest_version": 3,
+  "name": "Image Scraper",
+  "version": "1.0",
+  "description": "Scrape images from a webpage",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "downloads.open"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icons8-upload-image-16.png",
+      "48": "images/icons8-upload-image-48.png",
+      "128": "images/icons8-upload-image-100.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
+
